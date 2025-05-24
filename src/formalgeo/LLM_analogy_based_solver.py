@@ -26,7 +26,7 @@ from similar_proofs_retrieval import retrieve_random_proofs
 # Get the path to the project root
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-key = "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"
+key = ""
 openai.api_key = key
 
 dl = DatasetLoader(dataset_name="formalgeo7k_v1", datasets_path=os.path.join(PROJECT_ROOT, "formalgeo7k_v1"))

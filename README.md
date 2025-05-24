@@ -9,91 +9,48 @@ This repository contains the code for the paper: https://arxiv.org/abs/2505.1447
 
 ## Setup
 
-[//]: # (The code is implemented in python 3.8.12. To run it, please install the requirements.txt file:)
+The code is implemented in python 3.10 To run it, please create a conda environment using environment.yml file:
+conda env create -f environment.yml
+conda activate your_env_name
 
-[//]: # (```bash)
+Make sure to:
+pip install formalgeo
+pip install pandas
+pip install openai
+pip install matplotlib
 
-[//]: # (pip install -r minimalrequirements.txt)
+Make sure to install the z3 library for the verifier:
+pip install z3-solver
 
-[//]: # (```)
+## 📁 Important Folders and Files
 
-## Where to start?
+### `src/`
 
-[//]: # (Explore the **paper_experiments_results** folder for restoring the results in the experiment )
 
-[//]: # (&#40;each folder contains a separate README file&#41;. <br/>)
+### `formalgeo7k_v1/`
 
-[//]: # (Run **runner.py** for running our algorithm on a specific example of pairs of texts. <br/>)
+This directory contains the FormalGeo7K dataset:
 
-[//]: # (Note that you don't need to run coreference and qa_srl, as the output files have already exist in the repo. )
+- `formalgeo7k_v1/gdl/theorem_GDL.json`  
+  The **Geometry Definition Language (GDL)** theorem dictionary used across the dataset.
 
-[//]: # (&#40;You should run coreference and qa_srl only if you use a new input text files, )
+- `formalgeo7k_v1/problems/`  
+  A collection of **problem JSON files**, each representing an individual problem in the FormalGeo7K dataset.
 
-[//]: # (by setting run_coref=False, run_qasrl=False in analogous_matching_algorithm function&#41;)
+### `results/`
 
-[//]: # ()
-[//]: # (## Important folders)
+This directory contains:
 
-[//]: # ()
-[//]: # (**paper_experiments_results**:<br/>)
+- **Evaluation Data**  
+  Subfolders grouped by difficulty level (`level_1` to `level_5`), each containing problems and their corresponding proof outputs evaluated in our experiments.
 
-[//]: # (Contains the datasets, the labels of the annotators, as well as the data which generates the results in the figures )
+- **Figures Included in the Paper**
+  - `correct_proofs_ablation.png` – *Figure 3*: Ablation study on correct proofs  
+  - `retries_and_runs.png` – *Figure 4*: Effect of retries and multiple runs  
+  - `tier_error_distribution.png` – *Figure 5*: Distribution of errors across difficulty tiers  
+  - `analogy_stability.png` – *Figure 9*: Stability analysis of the analogy-based method
 
-[//]: # (and tables of the three experiments. Each inner folder contains a separate README file.<br/>)
 
-[//]: # ()
-[//]: # (**data:**<br/>)
-
-[//]: # (Includes the following folders:<br/>)
-
-[//]: # (**original_text_files** -- all the original texts files &#40;including the stories and paragraphs from ProPara&#41;.<br/>)
-
-[//]: # (**coref_text_files** -- all the texts files after coreference &#40;including the stories and paragraphs from ProPara&#41;.<br/>)
-
-[//]: # (**propara** -- data files relevant to ProPara dataset, output files of the ranking lists for the different models )
-
-[//]: # (   &#40;see Section 4.1 in the paper&#41;, and some code files to read and print stats on ProPara and the methods.<br/>)
-
-[//]: # (   )
-[//]: # (**s2e-coref:**<br/>)
-
-[//]: # (Contains the implementation code for the coreference model that we used &#40;see Section 3.1 in the paper&#41;.<br/>)
-
-[//]: # ()
-[//]: # (**qasrl-modeling**<br/>)
-
-[//]: # (Contains the implementation code for the QA-SRL model that we used &#40;see Section 3.2 in the paper&#41;.<br/>)
-
-[//]: # ()
-[//]: # (## Important py. files)
-
-[//]: # ()
-[//]: # (## Algorithm's code files)
-
-[//]: # (**runner.py** -- runner of our analogous matching algorithm on given pairs.<br/>)
-
-[//]: # (**find_mappings.py** -- run FMQ method on a given pair of texts  &#40;called from outside to generate_mappings function&#41;.<br/>)
-
-[//]: # (**find_mappings_verbs.py** -- run FMV method on a given pair of texts &#40;called from outside to generate_mappings function&#41;.\)
-
-[//]: # (**sentence_bert.py** -- run SBERT on a given pair of texts.<br/>)
-
-[//]: # (**coref.py** -- run our coreference implementation on input files.<br/>)
-
-[//]: # (**qa-srl.py** -- run our QA-SRL implementation on texts files &#40;after coref&#41;.<br/>)
-
-[//]: # ()
-[//]: # (## Experiment's code files)
-
-[//]: # (**run_propara_all_pairs_exp.py** -- run experiment 1 &#40;see Section 4.1 in the paper&#41;.<br/>)
-
-[//]: # (**analogies_mining_exp_annotators_consistency.py** -- run annotators consistency confusion matrix )
-
-[//]: # (&#40;see Section 4.1 in the paper&#41;.<br/>)
-
-[//]: # (**run_mappings_evaluation_exp.py** -- run experiment 2 &#40;see Section 4.2 in the paper&#41;.<br/>)
-
-[//]: # (**run_robustness_to_paraphrases_exp.py** -- run experiment 3 &#40;see Section 4.3 in the paper&#41;.<br/>)
 
 ## Cite
  @article{sultan2025towards,
