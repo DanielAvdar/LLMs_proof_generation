@@ -21,12 +21,17 @@ conda activate FormalGeo_env
 ```
 
 Make sure to install required packages:
+```bash
 pip install formalgeo
 pip install pandas
 pip install openai
 pip install matplotlib
+```
+
 Make sure to install the z3 library for the verifier:
+```bash
 pip install z3-solver
+```
 
 ## 📁 Important Folders and Files
 
