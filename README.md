@@ -108,5 +108,3 @@ This repository contains the code for the paper: https://arxiv.org/abs/2505.1447
 ## Contact
 For inquiries, please send an email to oren.sultan@mail.huji.ac.il.
 
-
-Towards Reliable Proof Generation with LLMs: A Neuro-Symbolic Approach
