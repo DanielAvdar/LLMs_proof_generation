@@ -7,18 +7,24 @@ This repository contains the code for the paper: https://arxiv.org/abs/2505.1447
 
 
 
-## Setup
+## 🚀 Setup
 
-The code is implemented in python 3.10 To run it, please create a conda environment using environment.yml file:
+The code is implemented in **Python 3.10**.
+
+To get started:
+
+### 1. Create and activate the conda environment
+
+```bash
 conda env create -f environment.yml
-conda activate your_env_name
+conda activate FormalGeo_env  
+```
 
-Make sure to:
+Make sure to install required packages:
 pip install formalgeo
 pip install pandas
 pip install openai
 pip install matplotlib
-
 Make sure to install the z3 library for the verifier:
 pip install z3-solver
 
