@@ -96,14 +96,12 @@ This repository contains the code for the paper: https://arxiv.org/abs/2505.1447
 [//]: # (**run_robustness_to_paraphrases_exp.py** -- run experiment 3 &#40;see Section 4.3 in the paper&#41;.<br/>)
 
 ## Cite
-@article{sultan2025towards, <br/>
-  @article{sultan2025towards,
+ <br> @article{sultan2025towards,
   title={Towards Reliable Proof Generation with LLMs: A Neuro-Symbolic Approach},
   author={Sultan, Oren and Stern, Eitan and Shahaf, Dafna},
   journal={arXiv preprint arXiv:2505.14479},
   year={2025}
-} <br/>
-}
+} </br>
 
 
 
