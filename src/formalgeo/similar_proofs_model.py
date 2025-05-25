@@ -161,7 +161,7 @@ def print_bucket_ranges(y, bins, y_binned, title):
 def main():
     parser = argparse.ArgumentParser(description='Control model prediction execution.')
     parser.add_argument('--run-model-pred', type=int, choices=[0, 1],
-                        help='Flag to run model predictions (1 to run, 0 to skip)')
+                        help='Flag to run model predictions (1 to run, 0 to skip)', default=0)
 
     args = parser.parse_args()
 

@@ -25,7 +25,6 @@ from similar_proofs_retrieval import retrieve_random_proofs
 
 # Get the path to the project root
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-
 key = ""
 openai.api_key = key
 

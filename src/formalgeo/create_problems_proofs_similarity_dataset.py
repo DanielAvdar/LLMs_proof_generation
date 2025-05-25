@@ -9,8 +9,10 @@ from Problem import Problem
 from collections import Counter
 import argparse
 import collections
-
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+
 
 def remove_duplicates(theorem_seqs):
     seen = set()
