@@ -33,6 +33,7 @@ solver = Interactor(dl.predicate_GDL, dl.theorem_GDL)
 with open(os.path.join(PROJECT_ROOT, 'formalgeo7k_v1/gdl/theorem_GDL.json'), 'r') as f:
     theorems = json.load(f)
 
+
 chosen_problems_by_level = {
     1: [51] #  2795, 1168, 2677, 380, 944, 2940],
      # 1: [1975, 1490, 1726, 178, 2669, 2614, 51, 2323, 192, 2624, 2795, 1168, 688, 2677, 380, 221, 944, 2940, 2187, 1562],
