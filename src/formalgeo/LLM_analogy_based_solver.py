@@ -48,6 +48,7 @@ chosen_problems_by_level = {
      # 10: [4134, 3419, 2196, 4489, 6146, 6018, 6376, 5353, 3114, 5197, 4672, 4465, 3840, 6549, 5181, 6024, 4888, 392, 6239, 2371],
 }
 
+
 def get_theorem_seqs_expl(theorem_seqs):
     theorems_seqs_expl = []
     for theorem in theorem_seqs:
