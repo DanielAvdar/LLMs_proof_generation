@@ -20,6 +20,14 @@ conda env create -f environment.yml
 conda activate FormalGeo_env  
 ```
 
+### Install testing dependencies
+
+To run the tests, you'll need to install pytest:
+
+```bash
+pip install pytest
+```
+
 
 ## 📁 Important Folders and Files
 
@@ -96,6 +104,24 @@ This ensures that the solver and output behavior matches the modified logic desc
 }
 
 
+
+## 🧪 Running Tests
+
+To run the test suite:
+
+```bash
+# Run all tests
+pytest
+
+# Run tests with verbose output
+pytest -v
+
+# Run tests for a specific module
+pytest tests/formalgeo/tools/
+
+# Generate test coverage report
+pytest --cov=src
+```
 
 ## Contact
 For inquiries, please send an email to oren.sultan@mail.huji.ac.il.
