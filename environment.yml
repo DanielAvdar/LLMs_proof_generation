@@ -61,7 +61,7 @@ dependencies:
       - pydantic-core==2.20.1
       - pyparsing==3.1.2
       - python-dateutil==2.9.0.post0
-      - python-graphviz==0.20.3
+      - python-graphviz==0.19.1
       - pytz==2024.1
       - requests==2.32.3
       - scikit-learn==1.5.1
