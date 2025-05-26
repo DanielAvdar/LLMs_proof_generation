@@ -11,7 +11,7 @@ dependencies:
   - ncurses
   - openssl
   - pip
-  - python=3.10
+  - python=3.11
   - readline=8.2
   - setuptools
   - tk=8.6.13
@@ -61,7 +61,7 @@ dependencies:
       - pydantic-core==2.20.1
       - pyparsing==3.1.2
       - python-dateutil==2.9.0.post0
-      - python-graphviz==0.19.1
+      - python-graphviz==0.20.3
       - pytz==2024.1
       - requests==2.32.3
       - scikit-learn==1.5.1
