@@ -16,18 +16,16 @@ jobs:
         environment-file: environment.yml
         init-shell: bash
         cache-environment: true
-        
+        environment-name: FormalGeo_env
+        create-args: "-y"
+        # Ensures the environment is named and used consistently
+    
     - name: Install testing dependencies
       shell: bash -el {0}
       run: |
-        python -m pip install pytest pytest-cov
-        
-    - name: Test with pytest
+        micromamba run -n FormalGeo_env pip install pytest pytest-cov
+    
+    - name: Run pytest
       shell: bash -el {0}
       run: |
-        pytest
-        
-    - name: Generate coverage report
-      shell: bash -el {0}
-      run: |
-        pytest --cov=src
+        micromamba run -n FormalGeo_env pytest
