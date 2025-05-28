@@ -15,7 +15,7 @@ jobs:
       with:
         environment-file: environment.yml
         init-shell: bash
-        cache-environment: false
+        cache-environment: true
         
     - name: Install testing dependencies
       shell: bash -el {0}
