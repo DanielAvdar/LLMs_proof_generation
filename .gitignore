@@ -39,4 +39,5 @@ wheels/
 # Test coverage files
 .coverage
 .coverage.*
+coverage.xml
 htmlcov/
