@@ -35,3 +35,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Test coverage files
+.coverage
+.coverage.*
+htmlcov/

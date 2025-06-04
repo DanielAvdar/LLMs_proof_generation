@@ -1,0 +1,31 @@
+name: Python Tests
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Micromamba
+      uses: mamba-org/setup-micromamba@v1
+      with:
+        environment-file: environment.yml
+        init-shell: bash
+        cache-environment: true
+        environment-name: FormalGeo_env
+        create-args: "-y"
+        # Ensures the environment is named and used consistently
+    
+    - name: Install testing dependencies
+      shell: bash -el {0}
+      run: |
+        micromamba run -n FormalGeo_env pip install pytest pytest-cov
+    
+    - name: Run pytest
+      shell: bash -el {0}
+      run: |
+        micromamba run -n FormalGeo_env pytest
