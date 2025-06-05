@@ -2,6 +2,9 @@
 
 
 # Towards Reliable Proof Generation with LLMs: <br> A Neuro-Symbolic Approach
+
+[![codecov](https://codecov.io/gh/DanielAvdar/LLMs_proof_generation/branch/master/graph/badge.svg)](https://codecov.io/gh/DanielAvdar/LLMs_proof_generation)
+
 This repository contains the code for the paper: https://arxiv.org/abs/2505.14479. </br>
 **Authors: Oren Sultan, Eitan Stern, Dafna Shahaf, The Hebrew University of Jerusalem, Israel**. </br>
 
